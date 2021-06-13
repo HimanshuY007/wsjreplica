@@ -1,0 +1,272 @@
+@import url("https://fonts.googleapis.com/css2?family=Gentium+Book+Basic&family=Playfair+Display:wght@400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.time,
+.material-icons {
+  vertical-align: middle;
+  font-size: 13px;
+  color: red;
+}
+/*--------------------------------------Navcontainer----------------------------*/
+.navcontainer {
+  border-bottom: 0.4px solid rgb(172, 172, 172);
+  padding: 10px;
+  padding-bottom: 0px;
+  transition: all 0.5s ease;
+}
+.navbar {
+  text-align: center;
+  position: relative;
+}
+.title {
+  font-family: "Bodoni Moda", serif;
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: -1px;
+  word-spacing: 5px;
+  padding-bottom: 10px;
+}
+.navlist {
+  display: flex;
+  flex-wrap: wrap;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  color: rgb(131, 131, 131);
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.navitem {
+  padding: 10px 10px;
+}
+.navitem:hover {
+  color: rgb(48, 48, 48);
+  background-color: rgb(241, 241, 241);
+}
+.searchpanel {
+  position: absolute;
+  right: 1vw;
+  top: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  color: rgb(78, 78, 78);
+  font-size: 14px;
+}
+.subscribe {
+  margin-bottom: 20px;
+}
+.subscribe span {
+  padding: 5px 10px;
+}
+.search span {
+  vertical-align: middle;
+  font-size: 30px;
+  margin-left: 10px;
+  color: grey;
+}
+.searchicon {
+  position: absolute;
+  top: 10px;
+  right: 1vw;
+  visibility: hidden;
+  color: grey;
+}
+
+/* News container */
+.newscontainer {
+  display: flex;
+  padding: 10px;
+  justify-content: center;
+  margin: 0px 5vw;
+  margin-bottom: 20px;
+  border-bottom: 0.4px solid rgb(172, 172, 172);
+  font-family: "Gentium Book Basic", serif;
+  font-size: 16px;
+  color: rgb(78, 78, 78);
+}
+.newscontainer > div {
+  padding: 0px 10px;
+  border-right: 0.4px solid rgb(172, 172, 172);
+}
+.newscontainer > div:last-child {
+  border: none;
+}
+.newscontainer img {
+  width: 200px;
+  object-fit: contain;
+}
+
+/* Main Headline/ Main content*/
+.mainimage img {
+  width: 100%;
+}
+.maintitle {
+  font-family: "Playfair Display", serif;
+  font-weight: 600;
+  font-size: 24px;
+  color: black;
+  text-align: center;
+  cursor: pointer;
+}
+.maintitle:hover {
+  color: rgb(39, 97, 221);
+}
+.mainheading,
+.articleheading,
+.shortarticles {
+  padding: 10px 0px;
+}
+
+.timecontainer {
+  margin-top: 8px;
+  font-family: "Gentium Book Basic", serif;
+}
+.mainheading,
+.articleheading,
+.shortarticles {
+  border-bottom: 0.4px solid rgb(172, 172, 172);
+}
+.articleheading:last-child,
+.shortarticles:last-child {
+  border: none;
+}
+/* articleheading */
+.articleheading .articletitle {
+  font-family: "Playfair Display", serif;
+  font-size: 16px;
+  font-weight: 800;
+  color: black;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+.column1 .articleheading:first-child .articletitle {
+  font-size: 28px;
+}
+.articlecontent img {
+  height: 100px;
+  float: right;
+}
+/* short articles */
+.shortimage {
+  text-align: center;
+}
+.shorttitle {
+  color: black;
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+  cursor: pointer;
+}
+.articleheading .articletitle:hover,
+.shorttitle:hover {
+  color: rgb(39, 97, 221);
+}
+
+/* coulmn 4 */
+.weekendreads {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  color: black;
+  margin-bottom: 10px;
+}
+.weekendimage img {
+  width: 100%;
+}
+.contenttype {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  padding: 10px 0px;
+}
+.contenttitle {
+  font-family: "Playfair Display", serif;
+  font-size: 20px;
+  color: black;
+  font-weight: 700;
+  padding-bottom: 10px;
+}
+.opinioncontainer {
+  padding-top: 10px;
+  border-top: 0.4px solid rgb(172, 172, 172);
+}
+.opinioncontainer > div:first-child {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #a28c6d;
+  font-size: 16px;
+  font-weight: 600;
+}
+.opinioncontainer > div:nth-child(n + 2) {
+  border-bottom: 0.4px solid rgb(172, 172, 172);
+}
+.opinioncontainer > div:nth-child(n + 2) > p:first-child {
+  font-family: "Playfair Display", serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: black;
+  padding: 10px 0px 5px 0px;
+}
+.opinioncontainer > div:nth-child(n + 2) > p:last-child {
+  font-style: italic;
+  color: #a28c6d;
+  font-size: 16px;
+  padding-bottom: 10px;
+}
+
+/* Media queries */
+@media screen and (max-width: 1300px) {
+  .searchpanel {
+    display: none;
+  }
+  .searchicon {
+    visibility: visible;
+  }
+}
+
+/* navbar after scroll */
+.scrollnav {
+  position: fixed;
+  width: 100%;
+  background-color: white;
+  top: 0px;
+  transform: translateY(-100%);
+  animation: animate 0.5s ease forwards;
+}
+@keyframes animate {
+  to {
+    transform: translateY(0);
+  }
+}
+/* dropdowns */
+.dropdown {
+  position: absolute;
+  width: 100%;
+  background-color: rgb(241, 241, 241);
+  font-family: "Arial", serif;
+  font-size: 13px;
+  color: grey;
+  display: none;
+}
+.display-dropdown {
+  display: flex;
+  justify-content: center;
+}
+.head {
+  margin: 30px 0px;
+  padding: 0px 60px;
+  border-right: 0.4px solid rgb(172, 172, 172);
+}
+.head:last-child {
+  border: none;
+}
+.head > div {
+  padding: 10px 0px;
+}
+.dropdown-title {
+  font-size: 13px;
+  color: black;
+  font-weight: 600;
+}
